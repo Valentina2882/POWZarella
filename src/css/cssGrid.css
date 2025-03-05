@@ -18,3 +18,45 @@
     font-size: 1.5rem;
     color: blue;
 }
+
+@media (max-width: 768px) {
+
+    .navbar ul {
+        display: grid;
+        gap: 10px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .navbar li:nth-child(1){
+        order: 4; 
+    }
+    .navbar li:nth-child(3){
+        order: 1; 
+    }
+    .navbar li:nth-child(2){
+        order: 1; 
+    }
+}
+
+@media  (min-width: 769px) and (max-width: 1024px){
+
+    .navbar ul {
+        display: grid;
+        gap: 10px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .navbar li:nth-child(2){
+        order: 2; 
+    }
+
+    .navbar li:nth-child(1){
+        order: 3; 
+    }
+    
+    .navbar li:nth-child(4){
+        order: 4; 
+    }
+}

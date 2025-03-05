@@ -24,7 +24,7 @@
 }
 
 .cardFlexbox{
-    color: black;
+    color: rgb(17, 15, 15);
     /* width: 200px; */
     text-align: center;
     line-height: 100px;
@@ -37,27 +37,66 @@
     flex-basis: auto; */
 }
 
+
 /* Modificando propiedades específicas para algunas cards */
-.cardFlexbox:nth-child(3) {
-    order: 1; /* Moverá esta card al final */
+/*.cardFlexbox:nth-child(3) {
+    order: 1; /* Moverá esta card al final 
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 250px;
-}
-
+}*/
+/*
 .cardFlexbox:nth-child(5) {
-    order: -1; /* Moverá esta card al principio */
-    flex-grow: 2; /* Crecerá el doble que las demás */
+    order: -1; /* Moverá esta card al principio 
+    flex-grow: 2; /* Crecerá el doble que las demás 
     flex-shrink: 0.5;
-}
-
+}*/
+/*
 .cardFlexbox:nth-child(7) {
-    flex-shrink: 0; /* No se encogerá */
+    flex-shrink: 0; /* No se encogerá 
     flex-basis: 300px;
-}
-
+}*/
+/*
 .cardFlexbox:nth-child(10) {
     order: 2;
     flex-grow: 3;
     flex-basis: 350px;
+}*/
+
+/*
+@media (max-width: 768px) {
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li:nth-child(1){
+        order: 4; 
+    }
+    .navbar li:nth-child(3){
+        order: 1; 
+    }
+    .navbar li:nth-child(2){
+        order: 1; 
+    }
 }
+
+@media  (min-width: 769px) and (max-width: 1024px){
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li:nth-child(2){
+        order: 2; 
+    }
+
+    .navbar li:nth-child(1){
+        order: 3; 
+    }
+    
+    .navbar li:nth-child(4){
+        order: 4; 
+    }
+}
+*/
