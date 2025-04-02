@@ -1,260 +1,157 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Vite App</title>
-    <link rel="stylesheet" href="./src/style.css">
-    <link rel="stylesheet" href="./src/css/flexbox.css">
-    <link rel="stylesheet" href="./src/css/cssGrid.css">
-  </head>
-  <body>
-    <header class="header">
-      <h1>🌍 Pasto Food</h1>
-      <nav class="navbar">
-          <ul>
-              <li><a href="#inicio">Inicio</a></li>
-              <li><a href="#restaurantes">Restaurantes</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-          </ul>
-          
-      </nav>
-    </header>
-    <!-- Contenido principal -->
-    <main class="main-content">
-      <!-- Artículo destacado -->
-      <article class="post">
-
-        <section>
-          <h2>FLEXBOX</h2>
-          <div class="container-flex">
-            <div class="cardFlexbox">card 1</div>
-            <div class="cardFlexbox">card 2</div>
-            <div class="cardFlexbox">card 3</div>
-            <div class="cardFlexbox">card 4</div>
-            <div class="cardFlexbox">card 5</div>
-            <div class="cardFlexbox">card 6</div>
-            <div class="cardFlexbox">card 7</div>
-            <div class="cardFlexbox">card 8</div>
-            <div class="cardFlexbox">card 9</div>
-            <div class="cardFlexbox">card 10</div>
-            <div class="cardFlexbox">card 11</div>
-            <div class="cardFlexbox">card 12</div>
-            <div class="cardFlexbox">card 13</div>
-          </div>
-        </section>
-
-        <section>
-          <h2>CSS GRID</h2>
-          <div class="container-grid">
-            <div class="cardGrid">card 1</div>
-            <div class="cardGrid">card 2</div>
-            <div class="cardGrid">card 3</div>
-            <div class="cardGrid">card 4</div>
-            <div class="cardGrid">card 5</div>
-            <div class="cardGrid">card 6</div>
-            <div class="cardGrid">card 7</div>
-            <div class="cardGrid">card 8</div>
-            <div class="cardGrid">card 9</div>
-            <div class="cardGrid">card 10</div>
-            <div class="cardGrid">card 11</div>
-            <div class="cardGrid">card 12</div>
-          </div>
-        </section>
-
-        <section class="post-section">
-          <h3>Pasto: La Ciudad gastronomica</h3>
-          <img src="" alt="Vista panorámica de Pasto de noche" width="600">
-          <p>Pasto combina tradición y modernidad...</p>
-        </section>
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .ejercicio {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
         
-        <section class="post-section">
-          <h3>Consejos Prácticos</h3>
-          <ul>
-            <li>Transporte: Usa uber o taxi.</li>
-            <li>Lugares de interes: Centro, Cuadras, Avenida...</li>
-          </ul>
-        </section>
+        /* Ejercicio 1 */
+        #comentario {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        #contador-caracteres {
+            font-weight: bold;
+        }
         
-        <section class="post-section">
-          <audio controls muted>
-            <source src="./src/resources/Alesso Vs OneRepublic - If I Lose Myself (Alesso Remix).mp3" type="audio/mpeg">
-            Tu navegador no soporta la etiqueta de audio.
-          </audio>
-          <video width="640" height="360" controls>
-            <source src="./src/resources/video.mp4" type="video/mp4">
-            Tu navegador no soporta la etiqueta de video.
-          </video>
-          
-          <h2>Ejemplo de Geolocalización con HTML5</h2>
-          <button onclick="obtenerUbicacion()">Obtener mi ubicación</button>
-          <div id="resultado"></div>
-          
-          <dialog id="miDialogo">
-            <!-- <h2>¿Confirmar acción?</h2>
-            <p>¿Estás seguro de eliminar este elemento?</p> -->
-            <template id="card-template">
-              <div class="card">
-                <h2 class="title"></h2>
-                <p class="content"></p>
-              </div>
-            </template>
-            <div id="clone-block2"></div>
-            <button onclick="document.getElementById('miDialogo').close()">Cancelar</button>
-            <button onclick="eliminarElemento()">Aceptar</button>
-          </dialog>
-          
-          <button onclick="document.getElementById('miDialogo').showModal()">Abrir diálogo</button>
-          
-        </section>
+        /* Ejercicio 2 */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
         
-        <section>
-          <h2>Formulario</h2>
-          <form id="myForm">
-            <input type="text" id="nombre" placeholder="Nombre">
-            <input type="email" id="email" placeholder="Email">
-            <button type="submit">Enviar</button>
-          </form>
-          <button id="btnFetch">Enviar datos</button>
-          
-          <div id="response"></div>
-        </section>
+        .miniaturas {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .miniaturas img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 3px solid #e0e0e0;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .miniaturas img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+       
+        #vista-previa-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        #vista-previa {
+            max-width: 100%;
+            max-height: 500px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: none;
+        }
 
-        <section>
-          <picture>
-            <source media="(min-width: 1200px)" srcset="./src/images/nombreimage.webps">
-            <source media="(min-width: 768px)" srcset="imagen-mediana.jpg">
-            <img src="imagen-pequeña.jpg" alt="Descripción">
-          </picture>
-        </section>
+                
+        /* Ejercicio 3 */
+        #inputTarea {
+            width: 70%;
+            padding: 8px;
+        }
+        #addTarea {
+            padding: 8px 15px;
+            background: #2734ae;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #listaTareas {
+            list-style: none;
+            padding: 0;
+        }
+        .tarea {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px;
+            margin: 5px 0;
+            background: #f9f9f9;
+        }
+        .completada {
+            text-decoration: line-through;
+            color: #777;
+        }
+        .acciones-tarea button {
+            margin-left: 5px;
+            padding: 3px 8px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicios JavaScript</h1>
+    
+    <!-- Ejercicio 1 -->
+    <div class="ejercicio">
+        <h2>1. Contador de Caracteres</h2>
+        <textarea id="comentario" maxlength="200" placeholder="Escribe aquí..."></textarea>
+        <div>Caracteres restantes: <span id="contador-caracteres">200</span></div>
+    </div>
+    
+    <!-- Ejercicio 2 -->
+    <div class="ejercicio">
+        <h2>2. Galería de Proyectos</h2>
+        <div class="miniaturas">
+            <img src="./src/resources/imagen-vectorial.webp" 
+                 data-preview="./src/resources/imagen-vectorial.webp"
+                 data-desc="loro">
+            <img src="./src/resources/imagen.jpg" 
+                 data-preview="./src/resources/imagen.jpg"
+                 data-desc="imagen 2">
+            <img src="./src/resources/Imagen3-245003649.webp" 
+                 data-preview="./src/resources/Imagen3-245003649.webp"
+                 data-desc="imagen 3">
+        </div>
+        <img id="vista-previa">
+        <div id="descripcion-proyecto"></div>
+    </div>
+    
+    <!-- Ejercicio 3 -->
+    <div class="ejercicio">
+        <h2>3. Lista de Tareas</h2>
+        <div>
+            <input type="text" id="inputTarea" placeholder="Nueva tarea">
+            <button id="addTarea">Añadir</button>
+        </div>
+        <ul id="listaTareas"></ul>
+    </div>
 
-        <section> 
-          <h3>template</h3>         
-          <template id="card-template">
-            <div class="card">
-              <h2 class="title"></h2>
-              <p class="content"></p>
-            </div>
-          </template>
-          <div id="clone-block"></div>
-        </section>
+    <script src="./src/scripts/ejercicios.js" defer></script>
 
-        <section>
-          <h3>datalist</h3>
-          <label>Elige un lenguaje de programación:</label>
-          <input list="lenguajes">
-          <datalist id="lenguajes">
-            <option value="JavaScript">
-            <option value="Python">
-            <option value=".net">
-            <option value="node">
-            <option value="JavaScript">
-          </datalist>
-        </section>
-
-        <section>
-          <h3>output</h3>
-          <form oninput="resultado.value = parseInt(num1.value) + parseInt(num2.value)">
-            <input type="number" id="num1" value="0">
-            + <input type="number" id="num2" value="0">
-            = <output name="resultado">0</output>
-          </form>
-          <form oninput="resultado.value = parseInt(num1.value) * parseInt(num2.value)">
-            <input type="number" id="num1" value="0">
-            * <input type="number" id="num2" value="0">
-            = <output name="resultado">0</output>
-          </form>
-        </section>
-
-        <section>
-          <h3>meter</h3>
-          <meter 
-            min="0" 
-            max="100" 
-            value="90"
-            low="30" 
-            high="80">
-          </meter>
-        </section>
-
-        <section>
-          <h3>figure y figcaption</h3>
-          <figure>
-            <img src="grafico.png" alt="Crecimiento de usuarios">
-            <figcaption>Gráfico de crecimiento anual (2023-2024)</figcaption>
-          </figure>
-        </section>
-
-        <section>
-          <h3>canvas:</h3>
-          <canvas id="miCanvas" width="400" height="200"></canvas>
-          <script>
-            const canvas = document.getElementById('miCanvas');
-            const ctx = canvas.getContext('2d');
-            ctx.fillStyle = "blue";
-            ctx.fillRect(10, 10, 150, 100); // Dibuja un rectángulo
-          </script>
-        </section>
-   
-      </article>
-
-      <!-- Barra lateral (contenido relacionado) -->
-      <aside class="sidebar">
-          <p>En este texto, se resaltan <mark>Restaurantes Populares</mark> de pasto:</p>
-
-          <details open>
-            <ul>
-              <li><a href="https://lnk.bio/BeefMaster">Beef</a></li>
-              <li><a href="https://lamerced.com.co/">Merced</a></li>
-            </ul>
-          </details>
-
-          <progress value="50" max="100"></progress>
-          <!-- Usando JavaScript -->
-          <progress id="carga" max="90"></progress>
-          <script>
-            document.getElementById('carga').value = 70;
-          </script>
-
-          <h3>Proximos Eventos:</h3>
-          <p>El evento será el <time datetime="2025-02-25T20:00">25 de Febrero a las 8 PM</time>.</p>
-
-
-          <search>
-            <form action="/buscar" method="get">
-              <label for="query">Buscar:</label>
-              <input type="text" id="query" name="q" placeholder="Escribe aquí...">
-              <button type="submit">Buscar</button>
-            </form>
-          </search>
-
-          <div class="div-content">
-            <div><p>1</p></div>
-          <div><p>1</p></div>
-          <div><p>1</p></div>
-          <div><p>1</p></div>
-          <div><p>1</p></div>
-          </div>
-          
-
-      </aside>
-    </main>
-
-    <footer class="footer">
-      <div>
-        <p>© 2025 Guia de comida callejera. Todos los derechos reservados.</p>
-        <address>Contacto: <a href="mailto:info@food.com">info@food.com</a></address>
-      </div>
-    </footer>
-
-    <script src="./src/main.js" defer></script>
-    <script src="./src/scripts/geolocalizacion.js" defer></script>
-    <script src="./src/scripts/fetchData.js" defer></script>
-    <script src="./src/scripts/http.js" defer></script>
 
   </body>
 </html>
